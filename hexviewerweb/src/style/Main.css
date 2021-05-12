@@ -1,0 +1,28 @@
+.table {
+	display: flex;
+}
+
+.row {
+	display: table-row;
+}
+.offset {
+	/* display: inline; */
+}
+.offset div {
+	/* display: table-cell; */
+}
+
+
+.row span {
+	display: table-cell;
+	width: auto;
+	text-align: center;
+}
+.row span input {
+	width: 100%;
+	display: inline-block;
+}
+.row span {
+	box-sizing: border-box;
+	padding: 0 0.5rem;
+}

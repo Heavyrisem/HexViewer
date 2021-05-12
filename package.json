@@ -1,0 +1,25 @@
+{
+  "name": "hexviewer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./app/dist/main.js",
+  "homepage": "./",
+  "scripts": {
+    "reactStart": "cd ./hexviewerweb && npm start",
+    "start": "cd app && tsc && concurrently \"npm run reactStart\" \"wait-on http://localhost:3000 && cd .. && electron .\"",
+    "build": "npm run react-build && electron-builder"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^6.0.2",
+    "cross-env": "^7.0.3",
+    "electron": "^12.0.6",
+    "electron-builder": "^22.11.1",
+    "typescript": "^4.2.4",
+    "wait-on": "^5.3.0"
+  },
+  "dependencies": {
+    "electron-is-dev": "^2.0.0"
+  }
+}
