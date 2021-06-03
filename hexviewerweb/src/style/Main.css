@@ -2,11 +2,19 @@
 	display: flex;
 }
 
+.mainviewport {
+	
+}
+.mainviewport:focus {
+	outline: none;
+}
+
 .row {
 	display: table-row;
 }
 .offset {
 	/* display: inline; */
+	user-select: none;
 }
 .offset div {
 	/* display: table-cell; */
